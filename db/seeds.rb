@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+Game.destroy_all
+
+
+
+# 15.times {User.create(name: Faker::Name.name) }
+
+30.times {Game.create(score: Faker::Number.within(range: 400..1300), user_id: Faker::Number.within(range: 338..367), scoreboard_id: 1)}
